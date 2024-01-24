@@ -1,3 +1,3 @@
-pacakge handler
+package handler
 
 func GeneralHandler() {}
