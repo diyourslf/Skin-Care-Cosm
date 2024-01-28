@@ -1,26 +1,13 @@
-package skin-care-cosm
+package main
 
 import (
-	"context"
-	"net/http"
-	"time"
+	"log"
+	"skincarecosm"
 )
 
-type Server struct{
-	httpServer *http.Server
-}
-
-func (s *Server) Run(port string) error{
-	s.httpServer = &http.Server{
-		Addr:			":" + port,
-		MaxHeaderBytes: 1 << 28, 
-		ReadTimeout: 10* time.Second,
-		WriteTimeout:	10*time.Second,
+func main() {
+	srv := new(skincarecosm.Server)
+	if err := srv.Run("8000"); err != nil {
+		log.Fatal("error", err.Error())
 	}
-
-	return s.httpServer.ListenAndServe()
-}
-
-func (s *Server) Shutdown(ctx context.Context) {
-	return s.httpServer.Shutdown(ctx)
 }
