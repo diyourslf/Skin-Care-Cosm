@@ -1,3 +1,5 @@
 package handler
 
-func GeneralHandler() {}
+func Hand() {
+
+}
