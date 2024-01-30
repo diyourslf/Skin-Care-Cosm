@@ -1,0 +1,21 @@
+body{
+    color :#F2ECE7;
+    background-size:cover;
+    background:#F2ECE7
+
+
+}
+
+.wrapper{
+    min-height: 100vh;
+    width:100%;
+
+    background-color: #F2ECE7;
+    background-size:cover;
+
+}
+.main_text{
+    color:413E3C;
+    text-align: centre;
+    font-size:20px;
+}
