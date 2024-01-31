@@ -1,19 +1,32 @@
-#first{
-    color :#F2ECE7;
-    background-size:cover;
-    background:#F2ECE7;
-    min-height: 100vh;
-    width:100%;
-    background-color: #F2ECE7;
-
+@font-face {
+    font-family: Santiago;
+    src: url("../assets/fonts/santiago_sans_st/Santiago Sans St.ttf");
+    font-family: ClashDisplay;
+    src: url("../assets/fonts/Variable/ClashDisplay-Variable.ttf");
 }
+
+body {
+    background-color: #F2ECE7;
+}
+
+#first{
+    font-family: ClashDisplay;
+    width:100%;
+    text-align: center;
+}
+
+#first a{
+    color: black;
+    display: inline-block;
+    font-weight: small;
+    margin: 0 50px;
+}
+
 
 .main_text{
     color:#413E3C;
-    text-align: centre;
-    font-size:120%;
-    font-style:Santiago Sans St;
-    font-weight:100;
-
-
+    font-size: 50px;
+    font-family: Santiago;
+    font-weight:120%;
+    font-weight: lighter;
 }
