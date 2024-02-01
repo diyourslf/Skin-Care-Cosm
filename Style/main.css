@@ -4,29 +4,77 @@
     font-family: ClashDisplay;
     src: url("../assets/fonts/Variable/ClashDisplay-Variable.ttf");
 }
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box ;
 
+}
 body {
+    height:100vh;
     background-color: #F2ECE7;
 }
 
-#first{
+.navbar{
     font-family: ClashDisplay;
     width:100%;
-    text-align: center;
+    display:flex;
+    align-items: center;
+    justify-content:space-between ;
+    height: 80px;
+    padding: 0 50px;
+}
+.navbar h2{
+    color:#FF6F0F;
+    font-weight: 600;
+}
+.navbar ul{
+    display: flex;
+}
+.navbar ul li{
+    list-style: none;
+
 }
 
-#first a{
+.navbar ul li a{
+    text-decoration: none;
     color: black;
-    display: inline-block;
-    font-weight: small;
-    margin: 0 50px;
+    font-size: 16px;
+    margin-right: 25px;
+    transition:color 0.3s ease;
 }
+.navbar ul li:hover a{
+    color:#FF6F0F;
+}
+.navbar ul li:last-child a{
+    margin:0;
 
+}
+.shop-btn{
+    background-color: #FF6F0F;
+    padding: 6px 30px;
+    border:none;
+    font-size:16px;
+    cursor: pointer;
+    border-radius:6px;
+    transition: background-color 0.3s ease;
+}
+.shop-btn :hover{
+background:#f37e30;
+
+}
 
 .main_text{
-    color:#413E3C;
     font-size: 50px;
     font-family: Santiago;
-    font-weight:120%;
-    font-weight: lighter;
+    font-weight:400%;
+    font-weight:lighter;
+    padding-left: 250px;
+    line-height: 600%;
+    
+    
+}
+
+.highlighted{
+    color:#f37e30;
 }
