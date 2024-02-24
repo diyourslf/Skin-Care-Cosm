@@ -55,26 +55,53 @@ body {
     padding: 6px 30px;
     border:none;
     font-size:16px;
-    cursor: pointer;
+    cursor:pointer;
     border-radius:6px;
     transition: background-color 0.3s ease;
 }
 .shop-btn :hover{
-background:#f37e30;
+background:#FF6F0F;
 
 }
 
 .main_text{
     font-size: 50px;
     font-family: Santiago;
-    font-weight:400%;
+    font: weight 400%;
     font-weight:lighter;
     padding-left: 250px;
     line-height: 600%;
-    
+
     
 }
 
 .highlighted{
     color:#f37e30;
 }
+
+.simpson {
+    background: rgb(238,174,202);
+    background: linear-gradient(90deg, rgba(238,174,202,1) 0%, rgba(148,208,233,1) 100%);
+    }
+    .container {
+    width:25%;
+    height:25%;
+    display: inline-block;
+    
+    }
+
+    
+    svg:hover {
+    filter:drop-shadow(2px 4px 7px black) ;
+    }
+    #img {
+    transform-origin:110px 110px;
+      -webkit-transition: -webkit-transform 1s ease-in-out;
+              transition:         transform 1s ease-in-out;
+    }
+    
+    #img:hover {
+      -webkit-transform: rotate(360deg);
+              transform: rotate(360deg);
+              
+    }
